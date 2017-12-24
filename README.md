@@ -1,7 +1,6 @@
 # SimBrain
 A SimGrid-based simulator of protein spread in the brain
-##### Simulation of misfolded protein propagation in the brain as a 
-distributed computing system
+##### Simulation of misfolded protein propagation in the brain as a distributed computing system
 
 We model the brain as a distributed system where computing nodes represent brain regions
 and network links transport misfolded proteins (MPs). Nodes may produce, clear, and store MPs
@@ -10,22 +9,22 @@ using similar processes as described in ​ (Iturria-Medina et al. 2014)​ . We
 such a system. We compare our discrete-event simulation to the simulator in ( ​ Iturria-Medina et
 al. 2014)​.
 
-###Prerequisites
+### Prerequisites
 
-*[SimGrid 3.17](http://simgrid.gforge.inria.fr
-*C
+* [SimGrid 3.17](http://simgrid.gforge.inria.fr)
+* C
 
 ### Instalation
 
-*Under Debian, Ubuntu and similar systems, you can simply get the latest version of SimGrid from your distribution. For example, simply type the following in a terminal (as root):
+* Under Debian, Ubuntu and similar systems, you can simply get the latest version of SimGrid from your distribution. For example, simply type the following in a terminal (as root):
 
 `apt-get install simgrid`
 
-*You could also use the SimGrid docker container and get your code into the container, by typing the following in a terminal:
+* You could also use the SimGrid docker container and get your code into the container, by typing the following in a terminal:
 
 `sudo docker run --rm -it -v /path/to/local/directory:/SimBrain path/to/container/directory`
 
-  *example: sudo docker run --rm -it -v /home/masoud/Desktop/SimBrain:/SimBrain bigdatalabteam/simgriddocker /bin/bash
+  * example: sudo docker run --rm -it -v /home/masoud/Desktop/SimBrain:/SimBrain bigdatalabteam/simgriddocker /bin/bash
 
 ### Usage
 
