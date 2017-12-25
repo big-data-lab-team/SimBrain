@@ -1,0 +1,36 @@
+masoud@masoud-ThinkPad-E550:~$ sudo docker run --rm -it -v /home/masoud/Desktop/SimBrain:/SimBrain bigdatalabteam/simgriddocker /bin/bash
+[sudo] password for masoud: 
+[root@cb9a04951376 /]# ls
+SimBrain  bin  boot  core  dev  etc  home  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  simgrid  srv  sys  tmp  usr  var
+[root@cb9a04951376 /]# cd SimBrain 
+[root@cb9a04951376 SimBrain]# ls
+simbrain.c  simbrain.xml  simbrain_d.xml
+[root@cb9a04951376 SimBrain]# LD_LIBRARY_PATH=/simgrid/lib
+[root@cb9a04951376 SimBrain]# export LD_LIBRARY_PATH
+[root@cb9a04951376 SimBrain]# gcc simbrain.c -I/simgrid/include -L/simgrid/lib -lsimgrid -lm -o simbrain      
+[root@cb9a04951376 SimBrain]# ls
+simbrain  simbrain.c  simbrain.xml  simbrain_d.xml
+[root@cb9a04951376 SimBrain]# ./simbrain ./simbrain.xml ./simbrain_d.xml        
+[P0:output:(1) 0.000000] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.019014] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.019014] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.038029] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.038029] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.057043] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.057043] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.076058] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.076058] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.095072] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.095072] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.114087] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.114087] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.133101] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.133101] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.152116] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.152116] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.171130] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.171130] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.190145] [SimBrain/INFO] Task received : output
+[P0:output:(1) 0.190145] [SimBrain/INFO] Out -> H0
+[H0:input:(2) 0.209159] [SimBrain/INFO] Task received : output
+
